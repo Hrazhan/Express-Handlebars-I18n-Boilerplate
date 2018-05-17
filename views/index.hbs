@@ -1,0 +1,30 @@
+<h1>{{title}}</h1>
+
+<div>
+    {{translation.CHOOSE_LANGUAGE}}:
+    <ul>
+        <li>
+            <a href="/?clang=ku">{{translation.KURDISH}}</a>
+        </li>
+        <li>
+            <a href="/?clang=en">{{translation.ENGLISH}}</a>
+        </li>
+    </ul>
+
+    <p>{{translation.WELCOME_MSG}}</p>
+    <p>{{translation.CONTACT_TEXT}}</p>
+
+    <br>
+    {{!-- <h1>{{#if lang }} </h1> --}}
+    {{!-- {{eq lang  "ku" }} --}}
+    {{!-- <h2>kurdish</h2> --}}
+    {{!-- {{else}} --}}
+    {{!-- <h2> english </h2> --}}
+    {{!-- {{ /eq}} --}}
+
+    {{#compare lang "==" "ku" }}
+        <h2>کوردی</h2>
+    {{ else }}
+        <h2> English </h2>
+    {{/compare}}
+</div>

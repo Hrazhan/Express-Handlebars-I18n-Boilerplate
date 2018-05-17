@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>{{title}}</title>
+    {{#compare lang "===" "ku"}}
+      <link rel='stylesheet' href='/stylesheets/style.rtl.css' />
+      {{ else}}
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+    {{/compare}}
+  </head>
+  <body>
+    {{{body}}}
+  </body>
+</html>
